@@ -1,4 +1,117 @@
+/* .inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  } */
+
+body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #06121E;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+    width: 100vw;
+}
+
+.section-header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url('./assets/backgrond-header_section.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.icons-profile-header, .button-to_schedule-header {
+    margin: 30px 0px 0px 30px;
+}
+ 
 .icons-profile-header img{
     width: 30px;
     height: 30px;
+}
+
+.button-to_schedule-header {
+    cursor: pointer;
+    background: transparent;
+    border-style: none;
+    color: white;
+    border: 2px solid #BCBCBC;
+    border-radius: 4px;
+    padding: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-header-content {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.span-header-content {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.button-header-content{
+    cursor: pointer;
+    border-style: none;
+    color: white;
+    background-color: #D94140;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+
+    padding: 15px 40px;
+}
+
+.button-header-content:hover{
+    background-color: #b42b2b;
+    transition: 0.4s;
+
+    font-size: 26px;
+}
+
+.section-main-description {
+    background-color: #06121E;;
 }
