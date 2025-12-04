@@ -1,84 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <title>Barber | Início</title>
 </head>
 <body>
-
-    <section class="section-header-content">
-        <header>
-            <div class="icons-profile-header">
+    <header class="site-header" id="inicio">
+        <div class="header-bar container">
+            <nav class="social-links" aria-label="Redes sociais">
                 <a href="https://www.instagram.com/erickcinigaliadev/">
-                    <img class="icon-instagram-header" src="./assets/logo-instagram.svg" alt="">
+                    <img src="./assets/logo-instagram.svg" alt="Instagram">
                 </a>
                 <a href="https://www.facebook.com/">
-                    <img class="icon-facebook-header" src="./assets/logo-facebook.svg" alt="">
+                    <img src="./assets/logo-facebook.svg" alt="Facebook">
                 </a>
                 <a href="https://wa.me/5511945342906">
-                    <img class="icon-whatsapp-header" src="./assets/logo-whatsapp.svg" alt="">
-                </a> 
+                    <img src="./assets/logo-whatsapp.svg" alt="WhatsApp">
+                </a>
+            </nav>
+
+            <div class="logo-wrapper">
+                <img class="logo" src="./assets/ic-barber.svg" alt="Logo da barbearia">
             </div>
 
-            <img class="icon-logo-header" src="./assets/ic-barber.svg" alt="">
-
-            <button class="button-to_schedule-header">Agendar horário</button>
-        </header>
-
-        <div class="header-content">
-            <h1 class="title-header-content">ESTILO É UM REFLEXO DA SUA <br>ATITUDE E SUA PERSONALIDADE.</h1>
-            <span class="span-header-content">Horário de funcionamento: 09:00 ás 19:00</span>
-            <button class="button-header-content">Agendar horário</button>
+            <a class="btn btn-outline" href="#contato">Agendar horário</a>
         </div>
-    </section>
 
-    <section class="section-main-description">
-        <div class="images-card-main-description">
-            <img class="image-razor-main-description" src="./assets/img-beard-description.jpg" alt="">
-            <img class="image-beard-main-description" src="./assets/img-cutting-description.jpg" alt="">
-            <img class="image-cutting-main-description" src="./assets/img-razor-description.jpg" alt="">
-        </div>
-        <div class="main-description-content">
-            <h1 class="title-description-content">SOBRE</h1>
-            <p class="paragraph-description-content">Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque<br> proin risus. 
-            Orci proin morbi vestibulum convallis leo vestibulum<br> mus. Non duis augue eros mattis a quis sem sodales.</p>
-            <span class="span-description-content">Horário de funcionamento: 09:00 ás 19:00</span>
-        </div>
-    </section>
-
-    <section class="section-services">
-        <h1 class="title-services">SERVIÇOS</h1>
-        <p class="paragraph-services">Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. 
-            Non duis augue eros mattis a quis sem sodales.</p>
-        <div class="card-services">
-            <img src="./assets/img-hair-services.jpg" alt="">
-            <div class="bottom-card-services">
-                <span class="span-bottom-card-services">Corte cabelo</span>
-                <button class="button-bottom-card-services">R$ 45,00</button>
+        <div class="hero container">
+            <div class="hero-content">
+                <h1>ESTILO É UM REFLEXO DA SUA <br>ATITUDE E SUA PERSONALIDADE.</h1>
+                <p class="subtitle">Horário de funcionamento: 09:00 ás 19:00</p>
+                <a class="btn" href="#contato">Agendar horário</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="section-google-maps">
-        <div class="google-maps"></div>
-    </section>
+    <main>
+        <section class="section about" id="sobre">
+            <div class="container about-grid">
+                <div class="about-gallery">
+                    <img src="./assets/img-beard-description.jpg" alt="Homem cuidando da barba">
+                    <img src="./assets/img-cutting-description.jpg" alt="Corte de cabelo na barbearia">
+                    <img src="./assets/img-razor-description.jpg" alt="Navalha utilizada no corte">
+                </div>
+                <div class="about-text">
+                    <h2>SOBRE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
+                    <span class="schedule">Horário de funcionamento: 09:00 ás 19:00</span>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <div class="icons-profile-footer">
-            <a href=""><img class="icon-instagram-header" src="./assets/logo-instagram.svg" alt=""></a>
-            <a href=""><img class="icon-facebook-header" src="./assets/logo-facebook.svg" alt=""></a>
-            <a href=""><img class="icon-whatsapp-header" src="./assets/logo-whatsapp.svg" alt=""></a> 
+        <section class="section services" id="servicos">
+            <div class="container">
+                <h2>SERVIÇOS</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <img src="./assets/img-hair-services.jpg" alt="Corte de cabelo masculino">
+                        <div class="card-content">
+                            <span>Corte cabelo</span>
+                            <button class="btn btn-ghost" type="button">R$ 45,00</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section maps" id="contato">
+            <div class="container">
+                <h2>ENCONTRE-NOS</h2>
+                <div class="map-embed" aria-label="Mapa de localização">
+                    <iframe title="Mapa da barbearia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.64602373214!2d-46.65771842453974!3d-23.508033160442007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58eafbdc0f1f%3A0x7b1e5a688f47f1eb!2sSenac%20S%C3%A3o%20Paulo%20-%20Santa%20Cec%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <nav class="social-links" aria-label="Redes sociais">
+                <a href="https://www.instagram.com/erickcinigaliadev/">
+                    <img src="./assets/logo-instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="./assets/logo-facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://wa.me/5511945342906">
+                    <img src="./assets/logo-whatsapp.svg" alt="WhatsApp">
+                </a>
+            </nav>
+            <div class="logo-wrapper">
+                <img class="logo" src="./assets/ic-barber.svg" alt="Logo da barbearia">
+            </div>
+            <span class="copyright">Copyright© 2023 | Dev Barbearia - Todos os direitos reservados.</span>
         </div>
-        <img class="icon-logo-footer" src="" alt="">
-
-        <span class="span-copyrights-footer">Copyright© 2023 | Dev Barbearia  - Todos os direitos reservados.</span>
     </footer>
 </body>
 </html>
